@@ -35,7 +35,7 @@ namespace ManagementLibrary.DataAccess
             int skip = (page - 1) * pageSize;
             return db.CandidateProfiles
                 .Where(p => p.Fullname.Contains(name)
-                || (!searchBirthday.HasValue || p.Birthday == searchBirthday)
+                || (!searchBirthday.HasValue && p.Birthday == searchBirthday)
                 )
                 .Skip(skip)
                 .Take(pageSize)
@@ -90,9 +90,11 @@ namespace ManagementLibrary.DataAccess
             }
         }
 
-        public int GetTotal()
+        public int GetTotal(String name, DateTime? searchBirthday)
         {
-            return db.CandidateProfiles.Count();
+            return db.CandidateProfiles.Where(p => p.Fullname.Contains(name)
+                || (!searchBirthday.HasValue && p.Birthday == searchBirthday)
+                ).Count();
         }
     }
 }

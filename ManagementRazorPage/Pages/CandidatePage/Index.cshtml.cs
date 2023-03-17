@@ -29,7 +29,7 @@ namespace ManagementRazorPage.Pages.CandidatePage
        
         public string name { get; set; }
 
-        public DateTime birthday { get;set;}
+        public DateTime? birthday { get;set;}
 
         public IActionResult OnGet(int pg =1)
         {
@@ -37,11 +37,12 @@ namespace ManagementRazorPage.Pages.CandidatePage
             string input2 = Request.Query["birthday"];
             name = input1 ?? "" ;
             page = pg;
-            int allRecords = repository.GetTotal();
+            birthday = (input2 == null || input2 == "") ? null : DateTime.Parse(input2);
+            int allRecords = repository.GetTotal(name:name,searchBirthday:birthday);
 
-            totalPage = (int)Math.Floor((decimal)allRecords / PageSize);
+            totalPage = (int)Math.Ceiling((decimal)allRecords / PageSize);
             
-            CandidateProfile = (IList<CandidateProfile>)repository.GetAll(pageSize: PageSize, page: page, name: name);
+            CandidateProfile = (IList<CandidateProfile>)repository.GetAll(pageSize: PageSize, page: page, name: name,searchBirthday: birthday);
            
            
             return Page();

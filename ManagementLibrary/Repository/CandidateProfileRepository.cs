@@ -21,7 +21,7 @@ namespace ManagementLibrary.Repository
 
         public bool Update (CandidateProfile candidateProfile) => CandidateProfileDAO.Instance.Update(candidateProfile);
 
-        public int GetTotal() => CandidateProfileDAO.Instance.GetTotal();
+        public int GetTotal(String name = "", DateTime? searchBirthday= null) => CandidateProfileDAO.Instance.GetTotal(name,searchBirthday);
 
 
     }

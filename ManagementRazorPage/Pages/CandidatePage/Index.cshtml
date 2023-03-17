@@ -16,14 +16,14 @@
 <form>
     <div class="form-group">
         <label  class="control-label"></label>
-        <input name="name"  class="form-control" />
+        <input name="name" value="@Model.name"  class="form-control" />
     </div>
     <div class="form-group">
         <label class="control-label"></label>
-        <input name="birthday" type="datetime-local"  class="form-control" />
+        <input name="birthday" value="@Model.birthday" type="datetime-local"  class="form-control" />
     </div>
     <div class="form-group">
-        <input type="submit" value="Save" class="btn btn-primary" />
+        <input type="submit" value="Search" class="btn btn-primary" />
     </div>
 </form>
 
@@ -82,7 +82,7 @@
         <ul class="pagination justify-content-lg-center">
             @for (int pg = 1; pg <= Model.totalPage; pg++){
                 <li class="page-item @(pg == Model.page ? "active" :"")">
-                    <a class="page-link" asp-page="Index" asp-route-name="@Model.name" asp-route-pg=@pg>@pg</a>
+                    <a class="page-link" asp-page="Index" asp-route-name="@Model.name" asp-route-pg=@pg asp-route-birthday=@Model.birthday>@pg</a>
                 </li>
             }
         </ul>
