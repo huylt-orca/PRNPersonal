@@ -1,0 +1,15 @@
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\bin\Debug\net5.0\ManagementLibrary.deps.json
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\bin\Debug\net5.0\ManagementLibrary.runtimeconfig.json
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\bin\Debug\net5.0\ManagementLibrary.runtimeconfig.dev.json
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\bin\Debug\net5.0\ManagementLibrary.dll
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\bin\Debug\net5.0\ManagementLibrary.pdb
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\obj\Debug\net5.0\ManagementLibrary.csproj.AssemblyReference.cache
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\obj\Debug\net5.0\ManagementLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\obj\Debug\net5.0\ManagementLibrary.AssemblyInfoInputs.cache
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\obj\Debug\net5.0\ManagementLibrary.AssemblyInfo.cs
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\obj\Debug\net5.0\ManagementLibrary.csproj.CoreCompileInputs.cache
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\obj\Debug\net5.0\ManagementLibrary.dll
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\obj\Debug\net5.0\refint\ManagementLibrary.dll
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\obj\Debug\net5.0\ManagementLibrary.pdb
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\obj\Debug\net5.0\ManagementLibrary.genruntimeconfig.cache
+D:\SE\semester7\PRN221\code\trialtest\PRN221_TrialTest_LuuThanhHuy\ManagementLibrary\obj\Debug\net5.0\ref\ManagementLibrary.dll
