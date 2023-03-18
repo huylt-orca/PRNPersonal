@@ -42,6 +42,7 @@
                 <label asp-for="CandidateProfile.PostingId" class="control-label"></label>
                 <select asp-for="CandidateProfile.PostingId" class ="form-control" asp-items="ViewBag.PostingId"></select>
             </div>
+            <p class="text-danger">@Model.msg</p>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

@@ -14,7 +14,7 @@ namespace ManagementRazorPage.Pages.CandidatePage
     {
         private CandidateProfileRepository repository;
         private JobPostingRepository jobRepo;
-
+        public String msg { get; set; }
         public CreateModel()
         {
            repository = new CandidateProfileRepository();
@@ -41,10 +41,10 @@ namespace ManagementRazorPage.Pages.CandidatePage
             if (repository.Create(CandidateProfile))
             {
                 return RedirectToPage("./Index");
-            } 
-            
+            }
+            msg = "Create Failed! Duplicate Id";
             // hander add failed
-
+            ViewData["PostingId"] = new SelectList(jobRepo.GetAll, "PostingId", "JobPostingTitle");
             return Page();
         }
     }

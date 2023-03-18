@@ -32,8 +32,8 @@ namespace ManagementRazorPage
             //services.AddRazorPages();
             services.AddMvc().AddRazorPagesOptions(options =>
             {
-                //options.Conventions.AddPageRoute("/Login", "");
-                options.Conventions.AddPageRoute("/CandidatePage/Index", "");
+                options.Conventions.AddPageRoute("/Login", "");
+                //options.Conventions.AddPageRoute("/CandidatePage/Index", "");
             });
         }
 

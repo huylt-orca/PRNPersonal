@@ -1,4 +1,5 @@
 ﻿using ManagementLibrary.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +34,7 @@ namespace ManagementLibrary.DataAccess
         public IEnumerable<CandidateProfile> GetAll(String name, int page, int pageSize,DateTime? searchBirthday)
         {
             int skip = (page - 1) * pageSize;
-            return db.CandidateProfiles
+            return db.CandidateProfiles.Include(p => p.Posting)
                 .Where(p => p.Fullname.Contains(name)
                 || (!searchBirthday.HasValue && p.Birthday == searchBirthday)
                 )
